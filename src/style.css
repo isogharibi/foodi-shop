@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --primary: #DB6885;
+    --bg: #fff;
+    --dark: #010101;
+    --gray: #353535;
+}
+
+main {
+    max-width: 370px;
+    margin: 37px auto;
+    overflow-x: hidden;
+}
+
+.mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.humber-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.humber-menu hr {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    background-color: var(--primary);
+    width: 30px;
+    height: 4px;
+    border-radius: 7px;
+}
+
+.title-icone {
+    width: 80px;
+}
+
+.bady-img {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.title-text {
+    color: var(--primary);
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.title-text-2 {
+    color: var(--gray);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.title-text-3 {
+    color: var(--gray);
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.explore-btn {
+    width: 174px;
+    height: 61px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--primary);
+}
+
+.explore-btn {
+    color: var(--bg);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.Create-btn {
+    width: 174px;
+    height: 61px;
+    border-radius: 7px;
+    border: 3px solid var(--primary);
+    background-color: transparent;
+}
+
+.Create-btn {
+    color: var(--primary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.footer-btn {
+    margin-top: 80px;
+}
+
+.desktop-menu {
+    display: none;
+}
+
+@media only screen and (min-width:900px) {
+    main {
+        max-width: 1000px;
+        margin: 37px auto;
+    }
+
+    .humber-menu {
+        display: none;
+    }
+
+    .mobile-header {
+        display: none;
+    }
+
+    .desktop-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-uls {
+        display: flex;
+        gap: 45px;
+    }
+
+    .header-uls li {
+        list-style: none;
+    }
+
+    .desktop-menu img {
+        width: 80px;
+    }
+
+    .des-btn {
+        width: 136px;
+        height: 41px;
+        border: none;
+        border-radius: 7px;
+        background-color: var(--primary);
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    
+    .body {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 60px;
+        gap: 90px;
+    }
+
+    .bady-img img{
+        width: 480px;
+    }
+
+}
